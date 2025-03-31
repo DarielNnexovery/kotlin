@@ -11,6 +11,6 @@ fun main() {
     if (num <= 9){
     print("el numero digitado es de un solo digito")
     }else{
-        print("el numero digitado tiene dos digitos")
+        print("el numero digitado tiene dos,tres o mas digitos ")
     }
 }
