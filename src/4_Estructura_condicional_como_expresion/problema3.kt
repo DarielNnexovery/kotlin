@@ -13,9 +13,19 @@ print("ingrese el segundo valor: ")
 val valor2 = readln().toInt()
 print("ingrese el tercer valor: ")
 val valor3 = readln().toInt()
-    val suma = (valor1 + valor2)
-    if (suma != valor3)
-        print("el triangulo es escaleno")
-    
+    // validar el triangulo
+    if (valor1 + valor2 > valor3 && valor1 + valor3 > valor2 && valor2 + valor3 > valor1) {
+        //determinara el tipo de triangulo
+        if (valor1 == valor2 && valor2 == valor3){
+            println("el triangulo es equilatero")
+        } else if (valor1 == valor2 || valor1 == valor3 || valor2 == valor3){
+            print("el triangulo es isoseles")
+        }else {
+            print ("el triangulo es escaleno")
+        }
+    }else{
+        print("los valores ingresados no pueden formar parte de un triangulo")
+    }
+
 
 }
